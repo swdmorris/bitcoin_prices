@@ -1,0 +1,14 @@
+<div class="center hero-unit">
+  <h2>
+    <div class="dynamic"> <%= render "price.html.erb" %> </div>
+    <script type="text/javascript">
+       $(document).ready(
+         function() {
+          setInterval(function() {
+            $('.dynamic').load('/static_pages/refresh_price');
+        }, 1000);
+    });
+</script>
+  </h2>
+
+</div>

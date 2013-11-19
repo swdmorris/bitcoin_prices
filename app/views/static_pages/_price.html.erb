@@ -1,0 +1,3 @@
+<h1>Current Bitcoin Price:</h1>
+<p><%= number_to_currency(MtGox.ticker.sell, :unit => "$") %></p>
+<h5><%= Time.now.strftime("%B %-d, %Y %I:%M:%S %p") %></h5>
