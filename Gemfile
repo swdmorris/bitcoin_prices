@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'rails_12factor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -29,7 +29,7 @@ gem 'mtgox'
 
 # Use sqlite3 for dev and test, postgresl for prod (heroku)
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '1.3.8'
 end
 group :production do
   gem 'pg'
